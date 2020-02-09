@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Artist;s table</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="tableScript.js"></script>
+</head>
+<body onload="onPageLoad()">
+	<div class = "modal-overlay" id = "modal-overlay">
+<h2>Таблица Художники</h2>
+<p> <button id = "btn_add">Добавить запись в таблицу</button> </p>
+<table id="mainTable">
+<thead>
+	<tr>
+		<td>Имя(псевдоним) художника</td>
+		<td>Ссылка на artstation</td>
+		<td>Специализация</td>
+		<td class="btn_change"></td>
+		<td class="btn_delete"></td>
+	</tr>
+</thead>
+
+<tbody>
+	
+</tbody>
+
+</table>
+
+<p> <a href="index.html">Вернуться на главную</a> </p>
+<p><a href="rome_form.html">Перевести число из римской записи</a></p>
+</div>
+
+<div id="modal" class="modal"> 
+	<div id="content">
+	<button id="close_button">Закрыть</button>
+	<p> <input id="inp_name" type="text" placeholder="Имя художника" required="true"></p>
+	<p> <input type="text"id="inp_link" placeholder="Ссылка на artstation" required="true"></p>
+	<p> <input type="text" id="inp_genre" placeholder="Специализация" required="true"></p>
+
+	<button id="ok_button" onclick="
+	addNote()">OK</button>
+</div>
+	</div>
+
+</body>
+</html>
